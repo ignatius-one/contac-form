@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+$white:#fff;
+$blue:#1E91D6;
+$balck:#272829;
+$leatter:#484A4B;
+*{
+
+    font-family: 'Roboto', sans-serif;
+    	// font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: $white;
+}
+.particulas{
+    width: 100%;
+	height: 100vh; 
+    position: fixed;
+    z-index: -1;
+}
+
+.container-form{
+    border-radius: .9375em;
+    margin: auto;
+    width: 90%;
+    display: flex;
+     background-color: rgba(255,255,255,.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,.8);
+    padding: .75em;
+    svg{
+        animation: move 3s  infinite alternate  ;
+        width: 40%;
+    }
+    fieldset{
+    border: none;
+    outline: none;
+    width: 50%;
+    background: linear-gradient(to right, rgb(86, 180, 211,.1), rgb(52, 143, 80,.1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-radius: .9375em;
+    margin:6.25em auto;
+    @media (max-width:1000px){
+            width: 90%;
+        }
+        legend{
+            font-size: 1.5625em;
+            padding: .3125em;
+        }
+    form{
+    padding: .75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .625em;
+         
+     label{
+            font-size: 1.5625em;
+    }
+    input{
+        border: 1px solid $blue ;
+        padding: .25em;
+        color: $balck;
+        &:focus{
+                outline: none;
+                border: 1px solid $blue;
+        }
+    }
+    .content{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        @media (max-width:1000px){
+            width: 90%;
+            align-items: flex-start;
+            align-content: flex-start;
+            flex-direction: column;
+        }
+    }
+
+    .content-issue{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+         @media (max-width:1000px){
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+        legend{
+            font-size: 1.5625em;
+            padding: .3125em;
+        }
+           textarea{
+            color: $leatter;
+            border: 1px solid $blue ;
+            width: 33.75em;
+            border-radius: .9375em;
+            padding: .625em;
+                    resize:none;
+            @media (max-width:1000px){
+                width: 43.75em;
+            }
+            @media (max-width:685px){
+                width: 28.125em;
+            }
+            @media (max-width:610px){
+                width: 25em;
+            }
+            @media (max-width:500px){
+                width: 24.375em;
+            }
+            @media (max-width:500px){
+                width: 21.875em;
+            }
+            @media (max-width:366px){
+                width: 20em;
+            }
+        legend{
+            font-size: 1.5625em;
+            padding: .3125em;
+        }
+            &:focus{
+                outline: none;
+         -webkit-box-shadow: 7px -6px 46px 32px rgba(0,180,216,0.18); 
+        box-shadow: 7px -6px 46px 32px rgba(0,180,216,0.18);
+            }
+        }
+    }
+
+    
+    input[type="submit"]{
+        outline: none;
+        border: none;
+        background: #EB3349;  
+        background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  
+        background: linear-gradient(to right, #F45C43, #EB3349); 
+        border-radius: .9375em;
+        color: $white;
+        font-size: 1.25em;
+        padding: .5em;
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+    
+}
+    }
+
+
+}
+
+@keyframes move {
+ 
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(1%);
+    }
+    70%{
+        transform: translateY(-1%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+    
+}
+@media (max-width:1158px){
+body{font-size: 15px;}
+}
+@media (max-width:1000px){
+    .container-form{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    svg{
+        width: 80%;
+        margin: auto;
+    }
+
+    }
+}
