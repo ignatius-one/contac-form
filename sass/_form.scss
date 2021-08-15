@@ -41,7 +41,8 @@ $leatter:#484A4B;
     backdrop-filter: blur(5px);
     overflow: hidden;
     border-radius: .9375em;
-    margin:6.25em auto;
+    margin: auto;
+   
     @media (max-width:1000px){
             width: 90%;
         }
@@ -50,12 +51,17 @@ $leatter:#484A4B;
             padding: .3125em;
         }
     form{
-    padding: .75em;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .625em;
+   
+        legend{
+            font-size: 1.5625em;
+            padding: .3125em;
+        }
          
      label{
             font-size: 1.5625em;
@@ -106,7 +112,7 @@ $leatter:#484A4B;
             @media (max-width:1000px){
                 width: 43.75em;
             }
-            @media (max-width:685px){
+            @media (max-width:687px){
                 width: 28.125em;
             }
             @media (max-width:610px){

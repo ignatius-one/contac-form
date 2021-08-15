@@ -1,1 +1,210 @@
-@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";*{font-family:"Roboto",sans-serif;font-weight:300;color:#fff}.particulas{width:100%;height:100vh;position:fixed;z-index:-1}.container-form{border-radius:.9375em;margin:auto;width:90%;display:flex;background-color:rgba(255,255,255,.1);backdrop-filter:blur(5px);border:1px solid rgba(255,255,255,.8);padding:.75em}.container-form svg{animation:move 3s infinite alternate;width:40%}.container-form fieldset{border:none;outline:none;width:50%;background:linear-gradient(to right, rgba(86, 180, 211, 0.1), rgba(52, 143, 80, 0.1));backdrop-filter:blur(5px);overflow:hidden;border-radius:.9375em;margin:6.25em auto}@media(max-width: 1000px){.container-form fieldset{width:90%}}.container-form fieldset legend{font-size:1.5625em;padding:.3125em}.container-form fieldset form{padding:.75em;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.625em}.container-form fieldset form label{font-size:1.5625em}.container-form fieldset form input{border:1px solid #1e91d6;padding:.25em;color:#272829}.container-form fieldset form input:focus{outline:none;border:1px solid #1e91d6}.container-form fieldset form .content{width:50%;display:flex;align-items:center;align-content:center;justify-content:space-evenly}@media(max-width: 1000px){.container-form fieldset form .content{width:90%;align-items:flex-start;align-content:flex-start;flex-direction:column}}.container-form fieldset form .content-issue{display:flex;align-content:center;justify-content:center;flex-direction:column}@media(max-width: 1000px){.container-form fieldset form .content-issue{align-items:flex-start;align-content:flex-start}}.container-form fieldset form .content-issue legend{font-size:1.5625em;padding:.3125em}.container-form fieldset form .content-issue textarea{color:#484a4b;border:1px solid #1e91d6;width:33.75em;border-radius:.9375em;padding:.625em;resize:none}@media(max-width: 1000px){.container-form fieldset form .content-issue textarea{width:43.75em}}@media(max-width: 685px){.container-form fieldset form .content-issue textarea{width:28.125em}}@media(max-width: 610px){.container-form fieldset form .content-issue textarea{width:25em}}@media(max-width: 500px){.container-form fieldset form .content-issue textarea{width:24.375em}}@media(max-width: 500px){.container-form fieldset form .content-issue textarea{width:21.875em}}@media(max-width: 366px){.container-form fieldset form .content-issue textarea{width:20em}}.container-form fieldset form .content-issue textarea legend{font-size:1.5625em;padding:.3125em}.container-form fieldset form .content-issue textarea:focus{outline:none;-webkit-box-shadow:7px -6px 46px 32px rgba(0,180,216,.18);box-shadow:7px -6px 46px 32px rgba(0,180,216,.18)}.container-form fieldset form input[type=submit]{outline:none;border:none;background:#eb3349;background:-webkit-linear-gradient(to right, #F45C43, #EB3349);background:linear-gradient(to right, #F45C43, #EB3349);border-radius:.9375em;color:#fff;font-size:1.25em;padding:.5em}.container-form fieldset form input[type=submit]:active{transform:scale(1.1)}@keyframes move{0%{transform:translateY(0)}20%{transform:translateY(1%)}70%{transform:translateY(-1%)}100%{transform:translateY(0)}}@media(max-width: 1158px){body{font-size:15px}}@media(max-width: 1000px){.container-form{flex-direction:column;flex-direction:column-reverse}.container-form svg{width:80%;margin:auto}}*{margin:0;padding:0;box-sizing:border-box}body{background:#085078;background:-webkit-linear-gradient(to right, #85D8CE, #085078);background:linear-gradient(to right, #85D8CE, #085078)}/*# sourceMappingURL=mai.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+.particulas {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.container-form {
+  border-radius: 0.9375em;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0.75em;
+}
+.container-form svg {
+  animation: move 3s infinite alternate;
+  width: 40%;
+}
+.container-form fieldset {
+  border: none;
+  outline: none;
+  width: 50%;
+  background: linear-gradient(to right, rgba(86, 180, 211, 0.1), rgba(52, 143, 80, 0.1));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  border-radius: 0.9375em;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .container-form fieldset {
+    width: 90%;
+  }
+}
+.container-form fieldset legend {
+  font-size: 1.5625em;
+  padding: 0.3125em;
+}
+.container-form fieldset form {
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625em;
+}
+.container-form fieldset form legend {
+  font-size: 1.5625em;
+  padding: 0.3125em;
+}
+.container-form fieldset form label {
+  font-size: 1.5625em;
+}
+.container-form fieldset form input {
+  border: 1px solid #1E91D6;
+  padding: 0.25em;
+  color: #272829;
+}
+.container-form fieldset form input:focus {
+  outline: none;
+  border: 1px solid #1E91D6;
+}
+.container-form fieldset form .content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 1000px) {
+  .container-form fieldset form .content {
+    width: 90%;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+}
+.container-form fieldset form .content-issue {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .container-form fieldset form .content-issue {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+.container-form fieldset form .content-issue legend {
+  font-size: 1.5625em;
+  padding: 0.3125em;
+}
+.container-form fieldset form .content-issue textarea {
+  color: #484A4B;
+  border: 1px solid #1E91D6;
+  width: 33.75em;
+  border-radius: 0.9375em;
+  padding: 0.625em;
+  resize: none;
+}
+@media (max-width: 1000px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 43.75em;
+  }
+}
+@media (max-width: 687px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 28.125em;
+  }
+}
+@media (max-width: 610px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 25em;
+  }
+}
+@media (max-width: 500px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 24.375em;
+  }
+}
+@media (max-width: 500px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 21.875em;
+  }
+}
+@media (max-width: 366px) {
+  .container-form fieldset form .content-issue textarea {
+    width: 20em;
+  }
+}
+.container-form fieldset form .content-issue textarea legend {
+  font-size: 1.5625em;
+  padding: 0.3125em;
+}
+.container-form fieldset form .content-issue textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 7px -6px 46px 32px rgba(0, 180, 216, 0.18);
+  box-shadow: 7px -6px 46px 32px rgba(0, 180, 216, 0.18);
+}
+.container-form fieldset form input[type=submit] {
+  outline: none;
+  border: none;
+  background: #EB3349;
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  border-radius: 0.9375em;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0.5em;
+}
+.container-form fieldset form input[type=submit]:active {
+  transform: scale(1.1);
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(1%);
+  }
+  70% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1158px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .container-form {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .container-form svg {
+    width: 80%;
+    margin: auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #085078;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*# sourceMappingURL=mai.css.map */
